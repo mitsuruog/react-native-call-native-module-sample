@@ -27,7 +27,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome 2 React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Button title={'Call CalendarManager'} onPress={() => CalendarManager.addEvent('Birthday Party', '4 Privet Drive, Surrey')}/>
+        <Button title={'Call CalendarManager'} onPress={() => CalendarManager.addEvent('Birthday Party', '4 Privet Drive, Surrey', new Date().getTime())}/>
       </View>
     );
   }
