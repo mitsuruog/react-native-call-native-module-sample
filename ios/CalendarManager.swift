@@ -5,7 +5,7 @@ import EventKit
 class CalendarManager: NSObject {
 
 @objc(addEvent:location:date:)
-  func addEvent(name: String, location: String, date: NSNumber) -> Void {
+  func addEvent(_ name: String, location: String, date: NSNumber) -> Void {
     print("--------- Pretending to create an event " + name + " at " + location + " from " + date.stringValue)
   
     let eventStore = EKEventStore()

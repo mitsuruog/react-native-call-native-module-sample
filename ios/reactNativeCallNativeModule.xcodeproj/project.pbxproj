@@ -36,8 +36,11 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactNativeCallNativeModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeCallNativeModuleTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		58105FF321F6ACEC00060DDA /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58105FF221F6ACEB00060DDA /* Counter.swift */; };
+		5810601A21F6AE9D00060DDA /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5810601921F6AE9D00060DDA /* Counter.m */; };
+		5810601C21F6B77800060DDA /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5810601B21F6B77800060DDA /* CalendarManager.m */; };
 		58637E3521F5A6B900C2993B /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58637E3421F5A6B900C2993B /* CalendarManager.swift */; };
-		58637E3921F5A93400C2993B /* CalendarManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 58637E3821F5A93400C2993B /* CalendarManagerBridge.m */; };
+		58637E3921F5A93400C2993B /* BridgeHeader.h in Sources */ = {isa = PBXBuildFile; fileRef = 58637E3821F5A93400C2993B /* BridgeHeader.h */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
@@ -341,9 +344,11 @@
 		2D02E47B1E0B4A5D006451C7 /* reactNativeCallNativeModule-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactNativeCallNativeModule-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* reactNativeCallNativeModule-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeCallNativeModule-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		58637E0B21F58E7800C2993B /* CalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
+		58105FF221F6ACEB00060DDA /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		5810601921F6AE9D00060DDA /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		5810601B21F6B77800060DDA /* CalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		58637E3421F5A6B900C2993B /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
-		58637E3821F5A93400C2993B /* CalendarManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManagerBridge.m; sourceTree = "<group>"; };
+		58637E3821F5A93400C2993B /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -493,9 +498,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				58637E0B21F58E7800C2993B /* CalendarManager.h */,
 				58637E3421F5A6B900C2993B /* CalendarManager.swift */,
-				58637E3821F5A93400C2993B /* CalendarManagerBridge.m */,
+				58637E3821F5A93400C2993B /* BridgeHeader.h */,
+				58105FF221F6ACEB00060DDA /* Counter.swift */,
+				5810601921F6AE9D00060DDA /* Counter.m */,
+				5810601B21F6B77800060DDA /* CalendarManager.m */,
 			);
 			name = reactNativeCallNativeModule;
 			sourceTree = "<group>";
@@ -1124,9 +1131,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58105FF321F6ACEC00060DDA /* Counter.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				58637E3921F5A93400C2993B /* CalendarManagerBridge.m in Sources */,
+				5810601C21F6B77800060DDA /* CalendarManager.m in Sources */,
+				58637E3921F5A93400C2993B /* BridgeHeader.h in Sources */,
 				58637E3521F5A6B900C2993B /* CalendarManager.swift in Sources */,
+				5810601A21F6AE9D00060DDA /* Counter.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1233,7 +1243,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = reactNativeCallNativeModule;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1255,7 +1265,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = reactNativeCallNativeModule;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = BridgeHeader.h;
 				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
