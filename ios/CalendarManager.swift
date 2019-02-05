@@ -4,7 +4,12 @@ import EventKit
 @objc(CalendarManager)
 class CalendarManager: NSObject {
 
-@objc(addEvent:location:date:)
+  @objc
+  static func requiresMainQueueSetup() -> Bool {
+    return true
+  }
+  
+  @objc(addEvent:location:date:)
   func addEvent(_ name: String, location: String, date: NSNumber) -> Void {
     print("--------- Pretending to create an event " + name + " at " + location + " from " + date.stringValue)
   
