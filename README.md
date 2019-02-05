@@ -7,6 +7,11 @@ This code just follows the following awesome blog post.
 
 Includes:
 
-- Method call and callback
-- Promise
-- EventEmitter
+- Call a native module methods
+- Handle Callback
+- Handle Promise
+- Handle EventEmitter
+
+# Demo
+
+![](images/demo.gif)
